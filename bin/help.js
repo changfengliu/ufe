@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
-console.log('mcfe Version: 1.0.9')
+console.log('mcfe Version: 1.2.0')
 console.log('')
 
 console.log('当前目录启动https server:');

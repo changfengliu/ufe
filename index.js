@@ -1,5 +1,1 @@
-module.exports = {
-	killport(port){
-		
-	}
-}
+module.exports = {}
