@@ -1,0 +1,35 @@
+{
+  "name": "mcfe",
+  "version": "1.0.10",
+  "description": "Meicai FE Dev toolset",
+  "main": "bin/cli.js",
+  "bin": {
+    "mcfe": "bin/help.js",
+    "mcfe-kp": "bin/killport.js",
+    "mcfe-ser": "bin/server.js",
+    "mcfe-new": "bin/file-tmp.js",
+    "mcfe-excel2json": "bin/excel2json.js",
+    "mcfe-proxy": "bin/proxy.js"
+  },
+  "scripts": {
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "colors": "^1.1.2",
+    "corser": "^2.0.1",
+    "cp-file": "^4.1.1",
+    "ecstatic": "^2.1.0",
+    "excel-as-json": "^2.0.0",
+    "http-proxy": "^1.16.2",
+    "kill-port": "^1.0.0",
+    "mitm": "^1.3.2",
+    "node-mitmproxy": "^3.1.0",
+    "opener": "^1.4.3",
+    "optimist": "^0.6.1",
+    "portfinder": "^1.0.13",
+    "union": "^0.4.6"
+  }
+}
