@@ -4,10 +4,9 @@ var os       = require('os'),
   colors     = require('colors'),
   opener     = require('opener'),
   portfinder = require('portfinder'),
-  httpServer = require('../lib/http-server/lib/http-server'),
-  logger     = require('../lib/http-server/lib/logger'),
-  printHelp  = require('../lib/http-server/lib/print-help'),
-  argv       = require('../lib/http-server/lib/cmd-helper').argv;
+  httpServer = require('../lib/http-server/index'),
+  logger     = require('../lib/util/logger'),
+  argv       = require('../lib/http-server/cmd').argv;
 
 if (!argv['port']) {
   portfinder.basePort = 8080;
@@ -21,14 +20,10 @@ if (!argv['port']) {
 
 function listen(port) {
   var options = {
-    proxy: argv['proxy']
+    proxy: argv['proxy'],
+    ssl: argv['ssl']
   }
-  if (argv['ssl']) {
-    options.https = {
-      cert: path.resolve(__dirname, '../lib/http-server/pem/cert.pem'),
-      key: path.resolve(__dirname, '../lib/http-server/pem/key.pem')
-    };
-  }
+  
   var server = httpServer.createServer(options);
   server.listen(port, argv['host'], function () {
     var canonicalHost = argv['host'] === '0.0.0.0' ? '127.0.0.1' : argv['host'],
