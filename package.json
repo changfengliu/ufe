@@ -1,6 +1,6 @@
 {
   "name": "mcfe",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Meicai FE Dev toolset",
   "main": "bin/cli.js",
   "bin": {
