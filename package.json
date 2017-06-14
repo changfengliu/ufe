@@ -1,6 +1,6 @@
 {
   "name": "mcfe",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "Meicai FE Dev toolset",
   "main": "bin/cli.js",
   "bin": {
@@ -10,7 +10,10 @@
     "mcfe-new": "bin/file-tmp.js",
     "mcfe-excel2json": "bin/excel2json.js"
   },
-  "scripts": {},
+  "scripts": {
+    "push": "npm publish",
+    "pull": "npm unpublish --force"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
