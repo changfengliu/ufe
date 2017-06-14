@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-
 var fs = require("fs")
 var path = require("path")
-var chalk = require('chalk')
+
+let logger = require('../lib/util/logger')
 
 let root = path.resolve()
 let aliasJSON = JSON.parse(fs.readFileSync(path.join(root, './alias.json')));

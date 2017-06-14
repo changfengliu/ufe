@@ -3,7 +3,7 @@
 // cmd: mcfe-excel2json excelFileName sheetIndex
 
 const path = require('path')
-let msg = require('../lib/msg.js')
+let logger = require('../lib/util/logger')
 let convertExcel = require('excel-as-json').processFile
 
 let args = process.argv
@@ -20,11 +20,11 @@ if(xlsxFileName){
 	}
 	convertExcel(src, dst, options, (err, data)=>{
 		if(err){
-			msg.fail(err, 'excel2json')
+			logger.fail(err, 'excel2json')
 		} else {
-			msg.success(dst, 'excel2json')
+			logger.success(dst, 'excel2json')
 		}
 	})
 } else {
-	msg.fail('excel file name is required!', 'excel2json')
+	logger.fail('excel file name is required!', 'excel2json')
 }

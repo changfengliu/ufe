@@ -1,5 +1,13 @@
 #!/usr/bin/env node
 'use strict'
+//
+// require('commander')
+//   .version(require('../package').version)
+//   .usage('<command> [options]')
+//   .command('init', 'generate a new project from a template')
+//   .command('list', 'list available official templates')
+//   .command('build', 'prototype a new project')
+//   .parse(process.argv)
 
 console.log('mcfe Version: 1.2.0')
 console.log('')

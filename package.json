@@ -4,11 +4,11 @@
   "description": "Meicai FE Dev toolset",
   "main": "bin/cli.js",
   "bin": {
-    "mcfe": "bin/help.js",
+    "mcfe": "bin/mcfe.js",
     "mcfe-kp": "bin/kill-port.js",
-    "mcfe-ser": "bin/server.js",
-    "mcfe-new": "bin/file-tmp.js",
-    "mcfe-excel2json": "bin/excel2json.js"
+    "mcfe-ser": "bin/http-server.js",
+    "mcfe-new": "bin/new-file.js",
+    "mcfe-excel2json": "bin/excel-json.js"
   },
   "scripts": {
     "push": "npm publish",
