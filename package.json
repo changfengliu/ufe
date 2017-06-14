@@ -27,6 +27,7 @@
     "excel-as-json": "^2.0.0",
     "execa": "^0.7.0",
     "http-proxy": "^1.16.2",
+    "inquirer": "^3.1.0",
     "opener": "^1.4.3",
     "optimist": "^0.6.1",
     "portfinder": "^1.0.13",
