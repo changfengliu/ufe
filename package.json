@@ -5,14 +5,15 @@
   "main": "bin/cli.js",
   "bin": {
     "mcfe": "bin/help.js",
-    "mcfe-kp": "bin/killport.js",
+    "mcfe-kp": "bin/kill-port.js",
     "mcfe-ser": "bin/server.js",
     "mcfe-new": "bin/file-tmp.js",
     "mcfe-excel2json": "bin/excel2json.js"
   },
   "scripts": {
     "push": "npm publish",
-    "pull": "npm unpublish --force"
+    "pull": "npm unpublish --force",
+    "perm": "chown -R $(whoami) ./"
   },
   "author": "",
   "license": "ISC",
@@ -24,8 +25,8 @@
     "dateformat": "^2.0.0",
     "ecstatic": "^2.1.0",
     "excel-as-json": "^2.0.0",
+    "execa": "^0.7.0",
     "http-proxy": "^1.16.2",
-    "kill-port": "^1.0.0",
     "opener": "^1.4.3",
     "optimist": "^0.6.1",
     "portfinder": "^1.0.13",
