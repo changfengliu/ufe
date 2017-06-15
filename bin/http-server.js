@@ -25,7 +25,8 @@ if (!argv['port'] || argv['port'] == 8080) {
 function listen(port) {
   var server = httpServer.createServer({
     proxy: argv['proxy'],
-    ssl: argv['ssl']
+    ssl: argv['ssl'],
+    php: argv['php']
   });
 
   server.listen(port, argv['host'], function () {
