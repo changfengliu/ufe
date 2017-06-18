@@ -8,6 +8,7 @@
     "mcfe-kp": "bin/kill-port.js",
     "mcfe-ser": "bin/http-server.js",
     "mcfe-new": "bin/new-file.js",
+    "mcfe-module": "bin/module-chart.js",
     "mcfe-excel2json": "bin/excel-json.js"
   },
   "scripts": {
