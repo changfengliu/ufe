@@ -1,0 +1,90 @@
+html {
+  height: 100%
+}
+body {
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+  overflow: auto;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#app{
+  height: 100%;
+}
+
+.folder-tree, .message-pane{
+  height: 100%;
+  overflow: auto;
+}
+.folder-tree{
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #F9FAFC;
+}
+.message-pane{
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #EFF2F7;
+  line-height: 26px;
+}
+
+.sub-title{
+  font-size: 18px;
+  margin: 0;
+  color: #1F2D3D;
+}
+
+/*------*/
+
+.tree{
+  padding: 0;
+  margin: 0;
+  line-height: 26px;
+}
+
+.tree .tree-node{
+
+}
+
+.tree .tree-node .child-nodes{
+	margin: 0;
+	margin-left: 5px;
+	padding: 0;
+	padding-left: 8px;
+	list-style-type: none;
+	border-left: dashed 1px #ccc;
+}
+
+.tree .tree-node .node-item{
+  margin-left: 2px;
+	cursor: pointer;
+}
+
+.tree .tree-node .node-item.selected{
+  background-color: #EEE;
+}
+
+.tree .tree-node .node-item:hover{
+	background-color: #EEEEEE;
+}
+
+.tree .tree-node .node-item.folder:before{
+	content:'\25B8';
+}
+
+.tree .tree-node .node-item.folder-open:before{
+	content:'\25BE';
+}
+
+.tree .tree-node .node-item.leaf:before{
+	content: '\00B7';
+	font-size: 24px;
+	vertical-align: middle;
+}

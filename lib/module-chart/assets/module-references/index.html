@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Module References</title>
+    <link type="text/css" href="./css/index.css" rel="stylesheet"/>
+    <script src="./libs/util.js"></script>
+    <script src="./libs/vue.js"></script>
+    <script src="./data/meta.js"></script>
+    <script src="./data/index.js"></script>
+    <script src="./tree/TreeNode.js"></script>
+    <script src="./tree/index.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="folder-tree">
+        <h2 class="sub-title">Source Tree</h2>
+        <tree :nodes="nodes" @select-node="selectNode"></tree-node>
+      </div>
+      <div class="message-pane">
+        <div v-if="node">
+          <div v-if="!node.children">
+            <h2 class="sub-title">File Path</h2>
+            <div>{{node.fullname}}</div>
+            <h2 class="sub-title">References({{currentNodeRefs.length}})</h2>
+            <div>
+              <div v-html="currentNodeRefs.join('<br/>')"></div>
+            </div>
+            <h2 class="sub-title">Dependencies({{currentNodeDeps.length}})</h2>
+            <div>
+              <div v-html="currentNodeDeps.join('<br/>')"></div>
+            </div>
+          </div>
+          <div v-else>
+            <h2 class="sub-title">Folder Path</h2>
+            <div>{{node.fullname}}</div>
+          </div>
+        </div>
+        <div v-else>No selected file/folder</div>
+      </div>
+    </div>
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data: function(){
+          return {
+            currentNodeDeps: [],
+            currentNodeRefs: [],
+            node: null
+          }
+        },
+        computed: {
+          nodes: function(){
+            return dataParser.getTreeData()
+          }
+        },
+        methods: {
+          selectNode(node, isLeaf){
+            this.node = node
+            var deps = dataParser.findDepByFullName(node['fullname'])
+            var refs = dataParser.findRefsByFullName(node['fullname'])
+            this.currentNodeDeps = deps
+            this.currentNodeRefs = refs
+          }
+        },
+        components: {
+          Tree: Tree
+        }
+      })
+    </script>
+  </body>
+</html>
