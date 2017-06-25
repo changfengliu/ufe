@@ -1,15 +1,15 @@
 {
-  "name": "mcfe",
-  "version": "1.4.4",
+  "name": "ufe",
+  "version": "1.4.0",
   "description": "Meicai FE Dev toolset",
   "main": "bin/cli.js",
   "bin": {
-    "mcfe": "bin/mcfe.js",
-    "mcfe-kp": "bin/kill-port.js",
-    "mcfe-ser": "bin/http-server.js",
-    "mcfe-new": "bin/new-file.js",
-    "mcfe-module": "bin/module-chart.js",
-    "mcfe-excel2json": "bin/excel-json.js"
+    "ufe": "bin/ufe.js",
+    "ufe-kp": "bin/kill-port.js",
+    "ufe-ser": "bin/http-server.js",
+    "ufe-new": "bin/new-file.js",
+    "ufe-module": "bin/module-chart.js",
+    "ufe-excel2json": "bin/excel-json.js"
   },
   "scripts": {
     "push": "npm publish",
@@ -25,6 +25,7 @@
     "corser": "^2.0.1",
     "cp-file": "^4.1.1",
     "dateformat": "^2.0.0",
+    "director": "^1.2.8",
     "ecstatic": "^2.1.0",
     "excel-as-json": "^2.0.0",
     "execa": "^0.7.0",
@@ -32,6 +33,7 @@
     "http-proxy": "^1.16.2",
     "inquirer": "^3.1.0",
     "json-format": "^1.0.1",
+    "lowdb": "^0.16.2",
     "opener": "^1.4.3",
     "opn": "^5.1.0",
     "optimist": "^0.6.1",

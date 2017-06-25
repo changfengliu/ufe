@@ -8,15 +8,15 @@ let newfileName = args[3]
 
 if(extensionName == '-h' || extensionName == '-help' || extensionName == '--help'){
   logger.sep()
-  logger.help('Usage 1: mcfe new newfileName.extensionName')
-  logger.help('Usage 2: mcfe new extensionName [newfileName]')
+  logger.help('Usage 1: ufe new newfileName.extensionName')
+  logger.help('Usage 2: ufe new extensionName [newfileName]')
   logger.sep()
-  logger.help('Example: mcfe new App.vue')
-  logger.help('Example: mcfe new vue (will generate newfile.vue)')
-	logger.help('Example: mcfe new vue App')
+  logger.help('Example: ufe new App.vue')
+  logger.help('Example: ufe new vue (will generate newfile.vue)')
+	logger.help('Example: ufe new vue App')
   logger.sep()
 } else {
-  //兼容 mcfe-new newfile.vue 的情况
+  //兼容 ufe-new newfile.vue 的情况
   if(extensionName && extensionName.indexOf('.') > -1){
     var fileNameParts = extensionName.split('.')
     newfileName = fileNameParts[0]
