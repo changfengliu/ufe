@@ -1,6 +1,6 @@
 {
   "name": "ufe",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Meicai FE Dev toolset",
   "main": "bin/cli.js",
   "bin": {
@@ -9,6 +9,7 @@
     "ufe-ser": "bin/http-server.js",
     "ufe-new": "bin/new-file.js",
     "ufe-module": "bin/module-chart.js",
+    "ufe-api": "bin/api-manager.js",
     "ufe-excel2json": "bin/excel-json.js"
   },
   "scripts": {
