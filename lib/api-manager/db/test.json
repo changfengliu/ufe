@@ -2,33 +2,72 @@
   "projectName": "test",
   "apis": [
     {
-      "name": "/cccccc2",
+      "name": "/cms/page/get-page-types",
       "method": "get",
       "value": {
-        "Who a222m i": "Web Api Mock Helper ♨ ",
-        "What c3an i do": {
-          "List": [
-            "Manage development api",
-            "Api data Download",
-            "Api list file Download"
-          ],
-          "Import": [
-            "Import json data from JSON file",
-            "Translate json from XML file",
-            "Import json data from http address"
-          ],
-          "Mock": [
-            "Mock the api with data in editor",
-            "Share data with coworker"
-          ]
-        },
-        "Version": "1.1.5√"
+        "ret": 1,
+        "data": [
+          {
+            "id": 1,
+            "name": "固定页2",
+            "code": "fixed"
+          },
+          {
+            "id": 2,
+            "name": "活动页2",
+            "code": "activity"
+          },
+          {
+            "id": 3,
+            "name": "推送页",
+            "code": "push"
+          },
+          {
+            "id": 4,
+            "name": "集市",
+            "code": "market"
+          },
+          {
+            "id": 5,
+            "name": "文章",
+            "code": "article"
+          }
+        ]
       }
     },
     {
       "name": "/abc",
       "method": "get",
-      "value": {}
+      "value": {
+        "ret": 1,
+        "data": [
+          {
+            "id": 1,
+            "name": "固定页",
+            "code": "fixed"
+          },
+          {
+            "id": 2,
+            "name": "活动页",
+            "code": "activity"
+          },
+          {
+            "id": 3,
+            "name": "推送页",
+            "code": "push"
+          },
+          {
+            "id": 4,
+            "name": "集市",
+            "code": "market"
+          },
+          {
+            "id": 5,
+            "name": "文章",
+            "code": "article"
+          }
+        ]
+      }
     },
     {
       "name": "/cccccc",
