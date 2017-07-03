@@ -1,6 +1,6 @@
 {
   "name": "ufe",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Meicai FE Dev toolset",
   "main": "bin/cli.js",
   "bin": {
@@ -45,5 +45,9 @@
     "recursive-copy": "^2.0.6",
     "union": "^0.4.6",
     "urlencode-for-php": "^1.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/changfengliu/ufe.git"
   }
 }
