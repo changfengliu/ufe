@@ -2,10 +2,10 @@
   "projectName": "test",
   "apis": [
     {
-      "name": "/cccccc222",
-      "method": "post",
+      "name": "/cccccc2",
+      "method": "get",
       "value": {
-        "Who am i": "Web Api Mock Helper ♨ ",
+        "Who a222m i": "Web Api Mock Helper ♨ ",
         "What c3an i do": {
           "List": [
             "Manage development api",
@@ -26,35 +26,16 @@
       }
     },
     {
-      "name": "/cccccc333",
-      "method": "post",
-      "value": {
-        "Who 333am i": "Web Api Mock Helper ♨ ",
-        "What can i do": {
-          "List": [
-            "Manage development api",
-            "Api data Download",
-            "Api list file Download"
-          ],
-          "Import": [
-            "Import json data from JSON file",
-            "Translate json from XML file",
-            "Import json data from http address"
-          ],
-          "Mock": [
-            "Mock the api with data in editor",
-            "Share data with coworker"
-          ]
-        },
-        "Version": "1.1.5√"
-      }
+      "name": "/abc",
+      "method": "get",
+      "value": {}
     },
     {
-      "name": "/cccccc444",
-      "method": "post",
+      "name": "/cccccc",
+      "method": "get",
       "value": {
         "Who am i": "Web Api Mock Helper ♨ ",
-        "What can i do": {
+        "What c3an i do": {
           "List": [
             "Manage development api",
             "Api data Download",
@@ -71,36 +52,6 @@
           ]
         },
         "Version": "1.1.5√"
-      }
-    },
-    {
-      "name": "/cccccc555",
-      "method": "post",
-      "value": {
-        "c": 200
-      }
-    },
-    {
-      "name": "/abc666",
-      "method": "get",
-      "value": {
-        "a": 200
-      }
-    },
-    {
-      "name": "/abc22",
-      "method": "post",
-      "value": {
-        "ret": 11111,
-        "data": []
-      }
-    },
-    {
-      "name": "/abc333",
-      "method": "get",
-      "value": {
-        "ret": 222,
-        "data": []
       }
     }
   ]
