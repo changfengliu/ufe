@@ -9,88 +9,51 @@
         "data": [
           {
             "id": 1,
-            "name": "固定页2",
+            "name": "固定页2222244",
             "code": "fixed"
           },
           {
             "id": 2,
-            "name": "活动页2",
+            "name": "活动页422224",
             "code": "activity"
           },
           {
             "id": 3,
-            "name": "推送页",
+            "name": "推送333222页",
             "code": "push"
           },
           {
             "id": 4,
-            "name": "集市",
+            "name": "集22222市",
             "code": "market"
           },
           {
             "id": 5,
-            "name": "文章",
+            "name": "文22222章",
             "code": "article"
           }
         ]
       }
     },
     {
-      "name": "/abc",
+      "name": "/site/system-menu",
+      "method": "get",
+      "value": {
+        "ret": 1,
+        "data": []
+      }
+    },
+    {
+      "name": "/cms/page/get-city-list",
       "method": "get",
       "value": {
         "ret": 1,
         "data": [
           {
-            "id": 1,
-            "name": "固定页",
-            "code": "fixed"
-          },
-          {
-            "id": 2,
-            "name": "活动页",
-            "code": "activity"
-          },
-          {
-            "id": 3,
-            "name": "推送页",
-            "code": "push"
-          },
-          {
-            "id": 4,
-            "name": "集市",
-            "code": "market"
-          },
-          {
-            "id": 5,
-            "name": "文章",
-            "code": "article"
+            "id": "1",
+            "name": "北京市"
           }
         ]
-      }
-    },
-    {
-      "name": "/cccccc",
-      "method": "get",
-      "value": {
-        "Who am i": "Web Api Mock Helper ♨ ",
-        "What c3an i do": {
-          "List": [
-            "Manage development api",
-            "Api data Download",
-            "Api list file Download"
-          ],
-          "Import": [
-            "Import json data from JSON file",
-            "Translate json from XML file",
-            "Import json data from http address"
-          ],
-          "Mock": [
-            "Mock the api with data in editor",
-            "Share data with coworker"
-          ]
-        },
-        "Version": "1.1.5√"
       }
     }
   ]
