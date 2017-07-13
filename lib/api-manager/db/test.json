@@ -2,41 +2,6 @@
   "projectName": "test",
   "apis": [
     {
-      "id": "fsdfsdasdfasd",
-      "name": "/cms/page/get-page-types",
-      "method": "get",
-      "value": {
-        "ret": 1,
-        "data": [
-          {
-            "id": 1,
-            "name": "固定页2222244",
-            "code": "fixed"
-          },
-          {
-            "id": 2,
-            "name": "活动页422224",
-            "code": "activity"
-          },
-          {
-            "id": 3,
-            "name": "推送333222页",
-            "code": "push"
-          },
-          {
-            "id": 4,
-            "name": "集22222市",
-            "code": "market"
-          },
-          {
-            "id": 5,
-            "name": "文22222章",
-            "code": "article"
-          }
-        ]
-      }
-    },
-    {
       "id": "fsdfsdasdfa24232342sd",
       "name": "/site/system-menu",
       "method": "get",
