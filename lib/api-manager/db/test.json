@@ -2,6 +2,7 @@
   "projectName": "test",
   "apis": [
     {
+      "id": "fsdfsdasdfasd",
       "name": "/cms/page/get-page-types",
       "method": "get",
       "value": {
@@ -36,6 +37,7 @@
       }
     },
     {
+      "id": "fsdfsdasdfa24232342sd",
       "name": "/site/system-menu",
       "method": "get",
       "value": {
@@ -44,6 +46,7 @@
       }
     },
     {
+      "id": "fsdfsda2423423423232sdfasd",
       "name": "/cms/page/get-city-list",
       "method": "get",
       "value": {
