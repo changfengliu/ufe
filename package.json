@@ -33,6 +33,7 @@
     "excel-as-json": "^2.0.0",
     "execa": "^0.7.0",
     "fastcgi-client": "^0.0.1",
+    "he": "^1.1.1",
     "http-proxy": "^1.16.2",
     "inquirer": "^3.1.0",
     "json-format": "^1.0.1",
