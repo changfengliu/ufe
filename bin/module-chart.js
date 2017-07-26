@@ -1,10 +1,12 @@
 #!/usr/bin/env node
-let logger = require('../lib/util/logger')
+const meow = require('meow');
+const cli = meow(`
+  Usage
+    $ ufe module
+`);
 let args = process.argv
 if(args[2] == '-h' || args[2] == '-help' || args[2] == '--help'){
-  logger.sep()
-  logger.help('Usage: ufe module')
-  logger.sep()
+  cli.showHelp()
 } else {
   require('../lib/module-chart/index')()
 }

@@ -1,13 +1,18 @@
 #!/usr/bin/env node
-let logger = require('../lib/util/logger')
+const meow = require('meow');
+const cli = meow(`
+  Usage
+    $ ufe kp portNumber
+
+  Examples
+    $ ufe kp 9999
+`);
+
 let args = process.argv
 let port = args[2]
 
-if(port == '-h' || port == '-help' || port == '--help'){
-  logger.sep()
-  logger.help('Usage: ufe kp port')
-  logger.help('Example: ufe kp 8080')
-  logger.sep()
+if(port == '-h' || port == '-help' || port == '--help' || !port){
+  cli.showHelp()
 } else {
   require('../lib/kill-port/index')(port)
 }

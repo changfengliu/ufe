@@ -1,15 +1,19 @@
 #!/usr/bin/env node
-let logger = require('../lib/util/logger')
+const meow = require('meow');
+const cli = meow(`
+  Usage
+    $ ufe excel2json excelFileName [sheetIndex(default 1)]
+
+  Examples
+    $ ufe excel2json data.xlsx
+`);
 
 let args = process.argv
 let xlsxFileName = args[2]
 let sheetIndex = args[3]
 
-if(xlsxFileName == '-h' || xlsxFileName == '-help' || xlsxFileName == '--help'){
-  logger.sep()
-  logger.help('Usage: ufe excel2json excelFileName [sheetIndex(default 1)]')
-  logger.help('Example: ufe excel2json data.xlsx')
-  logger.sep()
+if(xlsxFileName == '-h' || xlsxFileName == '-help' || xlsxFileName == '--help' || !xlsxFileName){
+  cli.showHelp()
 } else {
 	require('../lib/excel-json/index')(xlsxFileName, sheetIndex)
 }
