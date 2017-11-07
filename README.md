@@ -1,5 +1,8 @@
 ## Summary
 
+1. 可以作为命令行工具
+2. 可以引用包
+
 mcfe 是美菜网内部前端开发过程中使用的一个命令行工具集.
 [http://www.meicai.cn/](http://www.meicai.cn/)
 

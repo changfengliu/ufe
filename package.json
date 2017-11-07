@@ -1,17 +1,15 @@
 {
   "name": "ufe",
-  "version": "1.5.4",
+  "version": "1.6.2",
   "description": "Meicai FE Dev toolset",
-  "main": "bin/cli.js",
+  "main": "bin/index.js",
   "bin": {
     "ufe": "bin/ufe.js",
     "ufe-kp": "bin/kill-port.js",
     "ufe-ser": "bin/http-server.js",
     "ufe-new": "bin/new-file.js",
-    "ufe-init": "bin/init-project.js",
     "ufe-module": "bin/module-chart.js",
-    "ufe-api": "bin/api-manager.js",
-    "ufe-excel2json": "bin/excel-json.js"
+    "ufe-api": "bin/api-manager.js"
   },
   "scripts": {
     "push": "npm publish",
@@ -22,15 +20,12 @@
   "license": "ISC",
   "dependencies": {
     "array-includes": "^3.0.3",
-    "colors": "^1.1.2",
     "commander": "^2.9.0",
     "corser": "^2.0.1",
     "cp-file": "^4.1.1",
     "dateformat": "^2.0.0",
     "director": "^1.2.8",
-    "download-git-repo": "^1.0.1",
     "ecstatic": "^2.1.0",
-    "excel-as-json": "^2.0.0",
     "execa": "^0.7.0",
     "fastcgi-client": "^0.0.1",
     "he": "^1.1.1",
