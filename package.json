@@ -1,6 +1,6 @@
 {
   "name": "ufe",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "Meicai FE Dev toolset",
   "main": "bin/index.js",
   "bin": {
@@ -9,7 +9,8 @@
     "ufe-ser": "bin/http-server.js",
     "ufe-new": "bin/new-file.js",
     "ufe-module": "bin/module-chart.js",
-    "ufe-api": "bin/api-manager.js"
+    "ufe-api": "bin/api-manager.js",
+    "ufe-npm": "bin/npm-x.js"
   },
   "scripts": {
     "push": "npm publish",
@@ -25,6 +26,7 @@
     "cp-file": "^4.1.1",
     "dateformat": "^2.0.0",
     "director": "^1.2.8",
+    "easy-table": "^1.1.0",
     "ecstatic": "^2.1.0",
     "execa": "^0.7.0",
     "fastcgi-client": "^0.0.1",

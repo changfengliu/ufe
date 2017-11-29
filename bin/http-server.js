@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 var os       = require('os'),
-  path       = require('path'),
   opener     = require('opener'),
   portfinder = require('portfinder'),
   httpServer = require('../lib/http-server/index'),
