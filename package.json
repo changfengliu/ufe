@@ -1,6 +1,6 @@
 {
   "name": "ufe",
-  "version": "1.6.4",
+  "version": "1.6.5",
   "description": "Meicai FE Dev toolset",
   "main": "bin/index.js",
   "bin": {
