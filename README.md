@@ -1,18 +1,15 @@
 ## Summary
 
-1. 可以作为命令行工具
-2. 可以引用包
-
-mcfe 是美菜网内部前端开发过程中使用的一个命令行工具集.
+ufe(ultra front end toolset) 是美菜网内部前端开发使用的一个命令行工具集.
 [http://www.meicai.cn/](http://www.meicai.cn/)
 
 ## Install
 
-npm install mcfe -g
+npm install cfe -g
 
 ## Usage
 
-mcfe &lt;command&gt; [options]
+ufe &lt;command&gt; [options]
 
 Command List
 
@@ -32,26 +29,26 @@ Generate an es6 module reference manual of current dir
 Export a excel sheet to JSON file
 
 
-## mcfe ser [options]
+## ufe ser [options]
 
 启动一个本地https服务, 特点:
 1. 内置默认ssl证书，不用拷贝证书路径了,简化配置。
 2. 模糊匹配，如: 若访问/build/app.js,若未找到，则返回以 “/build/app.“开头的且最近修改的文件，这个特性在proxy to local时非常有用.
 3. options中指定 -d或--php 可使用本地php-fpm解析php文件.
 
-## mcfe new [options]
+## ufe new [options]
 
 在当前目录按内置模板新建文件，如vue,html文件，包含默认骨架代码，提高编码效率.
 
-## mcfe kp [options]
+## ufe kp [options]
 强制杀掉指定端口的关联进程
 
-## mcfe module [options]
+## ufe module [options]
 生成当前目录中es6源文件的模块引用手册，辅助源码分析.
 
-## mcfe excel2json [options]
+## ufe excel2json [options]
 将excel文件的指定sheet数据导出到json文件，便于js操作或文案拷贝。解除手动拷贝粘贴的苦恼.
 
 ## Command Help Detail
 
-type "mcfe help command" in your shell
+type "ufe help command" in your shell
