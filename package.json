@@ -1,6 +1,6 @@
 {
   "name": "ufe",
-  "version": "1.6.8",
+  "version": "1.6.9",
   "description": "Meicai FE Dev toolset",
   "main": "bin/index.js",
   "bin": {
@@ -35,7 +35,6 @@
     "http-proxy": "^1.16.2",
     "inquirer": "^3.1.0",
     "json-format": "^1.0.1",
-    "lowdb": "^0.16.2",
     "meow": "^3.7.0",
     "opener": "^1.4.3",
     "opn": "^5.1.0",
