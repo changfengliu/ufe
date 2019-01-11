@@ -1,6 +1,6 @@
 {
   "name": "@meicai/ufe",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Meicai FE Dev toolset",
   "main": "bin/index.js",
   "bin": {
@@ -18,13 +18,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "array-includes": "^3.0.3",
+    "chalk": "^2.4.2",
     "colors": "^1.1.2",
     "commander": "^2.9.0",
     "corser": "^2.0.1",
     "cp-file": "^4.1.1",
     "dateformat": "^2.0.0",
-    "director": "^1.2.8",
     "easy-table": "^1.1.0",
     "ecstatic": "^2.1.0",
     "execa": "^0.7.0",
@@ -32,14 +31,10 @@
     "he": "^1.1.1",
     "http-proxy": "^1.16.2",
     "inquirer": "^3.1.0",
-    "json-format": "^1.0.1",
     "meow": "^3.7.0",
     "opener": "^1.4.3",
-    "opn": "^5.1.0",
     "optimist": "^0.6.1",
-    "ora": "^1.3.0",
     "portfinder": "^1.0.13",
-    "recursive-copy": "^2.0.6",
     "union": "^0.4.6",
     "urlencode-for-php": "^1.0.2"
   },
