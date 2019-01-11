@@ -1,6 +1,6 @@
 {
-  "name": "ufe",
-  "version": "1.6.9",
+  "name": "@meicai/ufe",
+  "version": "1.7.0",
   "description": "Meicai FE Dev toolset",
   "main": "bin/index.js",
   "bin": {
@@ -8,8 +8,6 @@
     "ufe-kp": "bin/kill-port.js",
     "ufe-ser": "bin/http-server.js",
     "ufe-new": "bin/new-file.js",
-    "ufe-module": "bin/module-chart.js",
-    "ufe-api": "bin/api-manager.js",
     "ufe-npm": "bin/npm-x.js"
   },
   "scripts": {
